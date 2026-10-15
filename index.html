@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeuSetup Ideal — Monte o setup perfeito para você</title>
+  <meta name="description" content="Descubra o setup ideal para jogar, criar ou programar. Monte sua lista, compare faixas de preço e acerte na compra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="MeuSetup Ideal - início">
+        <svg class="logo__mark" viewBox="0 0 100 110" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#c05cff"/>
+              <stop offset="1" stop-color="#5a0be6"/>
+            </linearGradient>
+          </defs>
+          <polygon points="50,2 88,24 50,46 12,24" fill="url(#lg)" opacity=".95"/>
+          <polygon points="6,32 44,54 44,98 6,76" fill="url(#lg)"/>
+          <polygon points="94,32 56,54 56,98 94,76" fill="url(#lg)" opacity=".85"/>
+          <polygon points="50,58 72,70 50,82 28,70" fill="#d27bff"/>
+        </svg>
+        <span class="logo__text">Meu<b>Setup</b> <small>Ideal</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#perfis">Perfis</a>
+        <a href="#quiz">Descubra o seu</a>
+        <a href="#montador">Montador</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#quiz" class="btn btn--small header__cta">Começar</a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" data-img="images/setup-gamer.jpg"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <span class="tag">Guia de setups • 2026</span>
+        <h1>Monte o <span class="grad">setup ideal</span> para o seu jeito de usar o PC</h1>
+        <p>Jogar, criar ou programar: responda 3 perguntas, veja o que realmente importa para o seu perfil e monte sua lista com o orçamento na mão.</p>
+        <div class="hero__actions">
+          <a href="#quiz" class="btn">Descobrir meu setup</a>
+          <a href="#perfis" class="btn btn--ghost">Ver perfis</a>
+        </div>
+        <ul class="stats">
+          <li><strong data-count="3">0</strong><span>perfis completos</span></li>
+          <li><strong data-count="24">0</strong><span>itens para comparar</span></li>
+          <li><strong data-count="100" data-suffix="%">0</strong><span>gratuito</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PERFIS -->
+    <section class="section" id="perfis">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">Perfis</span>
+          <h2>Qual é o seu <span class="grad">tipo de setup</span>?</h2>
+          <p>Cada uso pede prioridades diferentes. Escolha um perfil para ver o essencial.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" data-profile="gamer">
+            <div class="card__img" data-img="images/setup-gamer.jpg"></div>
+            <div class="card__body">
+              <h3>Gamer</h3>
+              <p>Alta taxa de quadros, baixa latência e conforto para longas sessões.</p>
+              <ul>
+                <li>Monitor 144 Hz ou mais</li>
+                <li>Teclado e mouse de resposta rápida</li>
+                <li>Headset com microfone limpo</li>
+              </ul>
+              <button class="link-btn" data-pick="gamer">Montar setup gamer →</button>
+            </div>
+          </article>
+
+          <article class="card reveal" data-profile="criativo">
+            <div class="card__img" data-img="images/setup-criativo.jpg"></div>
+            <div class="card__body">
+              <h3>Criativo</h3>
+              <p>Cores fiéis, mesa digitalizadora e espaço organizado para criar sem travar.</p>
+              <ul>
+                <li>Monitor com boa cobertura de cor</li>
+                <li>Mesa digitalizadora</li>
+                <li>Notebook ou PC com bastante RAM</li>
+              </ul>
+              <button class="link-btn" data-pick="criativo">Montar setup criativo →</button>
+            </div>
+          </article>
+
+          <article class="card reveal" data-profile="dev">
+            <div class="card__img" data-img="images/setup-dev.jpg"></div>
+            <div class="card__body">
+              <h3>Programador</h3>
+              <p>Produtividade, muito espaço de tela e ergonomia para o dia todo.</p>
+              <ul>
+                <li>Monitor grande ou dois monitores</li>
+                <li>Teclado confortável</li>
+                <li>Cadeira e apoio ergonômicos</li>
+              </ul>
+              <button class="link-btn" data-pick="dev">Montar setup dev →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="section section--alt" id="quiz">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">Quiz rápido</span>
+          <h2>Descubra o <span class="grad">setup ideal</span> para você</h2>
+          <p>Três perguntas e você recebe uma recomendação personalizada.</p>
+        </div>
+
+        <div class="quiz reveal" id="quizBox">
+          <div class="quiz__progress"><div class="quiz__bar" id="quizBar"></div></div>
+          <div class="quiz__step" id="quizStep" aria-live="polite"></div>
+          <div class="quiz__nav">
+            <button class="btn btn--ghost btn--small" id="quizBack" disabled>Voltar</button>
+            <span class="quiz__count" id="quizCount">Pergunta 1 de 3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MONTADOR -->
+    <section class="section" id="montador">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">Montador</span>
+          <h2>Monte a sua <span class="grad">lista de compras</span></h2>
+          <p>Escolha o perfil, marque os itens e acompanhe o total estimado. Os valores são referências aproximadas em reais.</p>
+        </div>
+
+        <div class="builder reveal">
+          <div class="builder__main">
+            <div class="tabs" role="tablist" id="tabs">
+              <button class="tab is-active" role="tab" data-tab="gamer">Gamer</button>
+              <button class="tab" role="tab" data-tab="criativo">Criativo</button>
+              <button class="tab" role="tab" data-tab="dev">Programador</button>
+            </div>
+            <div class="items" id="items"></div>
+          </div>
+
+          <aside class="summary" aria-live="polite">
+            <h3>Sua lista</h3>
+            <ul class="summary__list" id="summaryList"></ul>
+            <div class="summary__total">
+              <span>Total estimado</span>
+              <strong id="total">R$ 0</strong>
+            </div>
+            <label class="budget">
+              <span>Meu orçamento</span>
+              <input type="number" id="budget" min="0" step="100" placeholder="Ex.: 5000">
+            </label>
+            <div class="budget__bar"><div id="budgetBar"></div></div>
+            <p class="budget__msg" id="budgetMsg">Defina um orçamento para acompanhar.</p>
+            <div class="summary__actions">
+              <button class="btn btn--small" id="copyList">Copiar lista</button>
+              <button class="btn btn--ghost btn--small" id="clearList">Limpar</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- DICAS -->
+    <section class="section section--alt" id="dicas">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">Dicas</span>
+          <h2>Antes de <span class="grad">comprar</span></h2>
+        </div>
+        <div class="tips">
+          <div class="tip reveal"><span class="tip__n">01</span><h3>Priorize o monitor</h3><p>É o item que você mais olha. Investir nele melhora jogos, trabalho e conforto visual.</p></div>
+          <div class="tip reveal"><span class="tip__n">02</span><h3>Pense na ergonomia</h3><p>Cadeira, altura da tela e apoio de pulso evitam dores e cansaço no longo prazo.</p></div>
+          <div class="tip reveal"><span class="tip__n">03</span><h3>Compre por etapas</h3><p>Comece pelo essencial e evolua o setup aos poucos, sem estourar o orçamento.</p></div>
+          <div class="tip reveal"><span class="tip__n">04</span><h3>Organize os cabos</h3><p>Uma mesa limpa deixa o setup mais bonito e facilita a manutenção.</p></div>
+        </div>
+
+        <div class="gallery reveal">
+          <figure><div class="gallery__img" data-img="images/setup-gamer.jpg"></div><figcaption>Iluminação e periféricos</figcaption></figure>
+          <figure><div class="gallery__img" data-img="images/setup-criativo.jpg"></div><figcaption>Mesa organizada para criar</figcaption></figure>
+          <figure><div class="gallery__img" data-img="images/codigo.jpg"></div><figcaption>Foco total no código</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="tag">FAQ</span>
+          <h2>Perguntas <span class="grad">frequentes</span></h2>
+        </div>
+        <div class="faq reveal" id="faqList">
+          <details><summary>Os preços são exatos?</summary><p>Não. São faixas de referência para ajudar no planejamento. Pesquise em lojas antes de comprar.</p></details>
+          <details><summary>Posso usar o mesmo setup para jogar e trabalhar?</summary><p>Pode. Um bom monitor, teclado confortável e um PC equilibrado atendem os dois usos.</p></details>
+          <details><summary>Notebook ou desktop?</summary><p>Desktop rende mais pelo mesmo preço e é mais fácil de atualizar. Notebook vale se você precisa de mobilidade.</p></details>
+          <details><summary>Por onde começar com orçamento baixo?</summary><p>Comece por monitor, cadeira e um teclado e mouse decentes. Dê upgrade no resto depois.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / NEWSLETTER -->
+    <section class="section cta">
+      <div class="container container--narrow">
+        <div class="cta__box reveal">
+          <h2>Receba novidades de setups</h2>
+          <p>Cadastre seu e-mail para ver dicas e ideias novas.</p>
+          <form id="newsForm" class="news" novalidate>
+            <input type="email" id="newsEmail" placeholder="seu@email.com" required aria-label="Seu e-mail">
+            <button class="btn" type="submit">Quero receber</button>
+          </form>
+          <p class="news__msg" id="newsMsg" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo__text">Meu<b>Setup</b> <small>Ideal</small></span>
+      <p>© <span id="year"></span> MeuSetup Ideal. Todos os direitos reservados.</p>
+      <a href="#inicio" class="footer__top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>

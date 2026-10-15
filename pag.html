@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeuSetup Ideal — O setup perfeito começa aqui</title>
+  <meta name="description" content="Monte o setup ideal para jogar, criar ou programar. Guias, dicas e listas prontas.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav" id="nav">
+      <a href="#topo" class="nav__brand"><img src="images/logo.png" alt="MeuSetup Ideal"></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#perfis">Perfis</a></li>
+        <li><a href="#como">Como funciona</a></li>
+        <li><a href="#numeros">Números</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="#contato" class="pill">Quero meu setup</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="badge"><i></i> Novo • Guia de setups 2026</span>
+          <h1>O setup <em>ideal</em> para quem leva o seu espaço a sério.</h1>
+          <p>Jogue melhor, crie mais e programe com conforto. A gente mostra o que comprar, em que ordem e quanto vale a pena gastar.</p>
+          <div class="hero__cta">
+            <a href="#perfis" class="btn btn--primary">Explorar perfis <span>→</span></a>
+            <a href="#como" class="btn btn--glass">Como funciona</a>
+          </div>
+          <div class="trust">
+            <div class="avatars"><span>🎮</span><span>🎨</span><span>💻</span></div>
+            <p><strong>+3 perfis</strong> prontos para você começar hoje</p>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="orb"></div>
+          <div class="logo-card tilt">
+            <img src="images/logo.png" alt="Logo MeuSetup Ideal">
+          </div>
+          <div class="chip chip--a"><b>144 Hz</b><small>Monitor</small></div>
+          <div class="chip chip--b"><b>RGB</b><small>Iluminação</small></div>
+          <div class="chip chip--c"><b>Ergonomia</b><small>Conforto total</small></div>
+        </div>
+      </div>
+      <a href="#perfis" class="scroll" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Gamer</span><span>✦</span><span>Criativo</span><span>✦</span><span>Programador</span><span>✦</span><span>Monitor</span><span>✦</span><span>Teclado</span><span>✦</span><span>Headset</span><span>✦</span><span>Ergonomia</span><span>✦</span>
+        <span>Gamer</span><span>✦</span><span>Criativo</span><span>✦</span><span>Programador</span><span>✦</span><span>Monitor</span><span>✦</span><span>Teclado</span><span>✦</span><span>Headset</span><span>✦</span><span>Ergonomia</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- PERFIS (BENTO) -->
+    <section class="section" id="perfis">
+      <div class="container">
+        <header class="head reveal">
+          <span class="eyebrow">Perfis</span>
+          <h2>Escolha o seu <em>estilo</em></h2>
+          <p>Cada pessoa usa o computador de um jeito. Veja o setup pensado para o seu.</p>
+        </header>
+
+        <div class="bento">
+          <article class="tile tile--big tilt reveal" style="--img:url('images/setup-gamer.jpg')">
+            <div class="tile__shade"></div>
+            <div class="tile__body">
+              <span class="tag">🎮 Gamer</span>
+              <h3>Velocidade e imersão</h3>
+              <p>Monitor de alta taxa de atualização, periféricos rápidos e iluminação para o clima certo.</p>
+              <a href="#contato" class="more">Quero esse setup →</a>
+            </div>
+          </article>
+
+          <article class="tile tilt reveal" style="--img:url('images/setup-criativo.jpg')">
+            <div class="tile__shade"></div>
+            <div class="tile__body">
+              <span class="tag">🎨 Criativo</span>
+              <h3>Cores fiéis</h3>
+              <p>Mesa digitalizadora e tela calibrada.</p>
+              <a href="#contato" class="more">Ver mais →</a>
+            </div>
+          </article>
+
+          <article class="tile tilt reveal" style="--img:url('images/codigo.jpg')">
+            <div class="tile__shade"></div>
+            <div class="tile__body">
+              <span class="tag">💻 Programador</span>
+              <h3>Foco total</h3>
+              <p>Espaço de tela e conforto o dia todo.</p>
+              <a href="#contato" class="more">Ver mais →</a>
+            </div>
+          </article>
+
+          <article class="tile tile--stat reveal">
+            <strong>24+</strong>
+            <span>itens recomendados em listas prontas</span>
+          </article>
+
+          <article class="tile tile--text reveal">
+            <h3>Compre por etapas</h3>
+            <p>Comece pelo essencial e evolua o setup aos poucos, sem estourar o orçamento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section section--dark" id="como">
+      <div class="container">
+        <header class="head reveal">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Três passos para o <em>setup ideal</em></h2>
+        </header>
+
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step__n">01</span>
+            <h3>Escolha o perfil</h3>
+            <p>Gamer, criativo ou programador. Cada um com prioridades diferentes.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__n">02</span>
+            <h3>Monte a lista</h3>
+            <p>Marque os itens, veja o total estimado e compare com o seu orçamento.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__n">03</span>
+            <h3>Compre com confiança</h3>
+            <p>Saiba o que priorizar e deixe o resto para depois.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="section" id="numeros">
+      <div class="container">
+        <div class="numbers reveal">
+          <div><strong data-count="3">0</strong><span>perfis completos</span></div>
+          <div><strong data-count="24" data-suffix="+">0</strong><span>itens para comparar</span></div>
+          <div><strong data-count="100" data-suffix="%">0</strong><span>gratuito</span></div>
+          <div><strong data-count="4">0</strong><span>dicas essenciais</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO / CTA -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__glow"></div>
+          <h2>Pronto para montar o <em>seu</em>?</h2>
+          <p>Deixe seu e-mail e receba ideias de setups, dicas de compra e novidades.</p>
+          <form id="form" class="form" novalidate>
+            <input type="email" id="email" placeholder="seu@email.com" aria-label="Seu e-mail" required>
+            <button class="btn btn--primary" type="submit">Quero receber</button>
+          </form>
+          <p class="form__msg" id="msg" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <img src="images/logo.png" alt="MeuSetup Ideal" class="footer__logo">
+      <p>© <span id="year"></span> MeuSetup Ideal. Todos os direitos reservados.</p>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="pagina.js"></script>
+</body>
+</html>
